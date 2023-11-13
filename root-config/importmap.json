@@ -1,0 +1,7 @@
+{
+  "env": ["browser", "development", "module"],
+  "imports": {
+    "single-spa": "https://ga.jspm.io/npm:single-spa@5.9.5/lib/esm/single-spa.min.js"
+  },
+  "scopes": {}
+}

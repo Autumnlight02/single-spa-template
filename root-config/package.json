@@ -1,0 +1,35 @@
+{
+  "name": "@single-spa-preview-phillip/root-config",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "lint": "eslint src --ext js,ts,tsx",
+    "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "build": "concurrently npm:build:*",
+    "build:webpack": "webpack --mode=production",
+    "build:types": "tsc"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-ts-important-stuff": "^1.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "@types/jest": "^27.0.1",
+    "jest": "^27.0.6",
+    "jest-cli": "^27.0.6",
+    "prettier": "^2.3.2",
+    "serve": "^12.0.0",
+    "ts-config-single-spa": "^3.0.0",
+    "typescript": "^4.3.5",
+    "vite-plugin-externalize-dependencies": "^0.10.0"
+  },
+  "dependencies": {
+    "single-spa": "^5.9.3",
+    "single-spa-layout": "^1.6.0",
+    "vite": "^4.4.2"
+  },
+  "types": "dist/example-root-config.d.ts"
+}

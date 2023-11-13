@@ -1,0 +1,19 @@
+{
+  "name": "single-spa-preview-phillip",
+  "version": "1.0.0",
+  "description": "This setup should help you get going with any Single-SPA Appmore. The setup is structured as Following: root-config // our root project microfrontend-01 // first Micro-fronten microfrontend-02 // second Micro frontend",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm i && cd ./root-config && npm install && cd ../microfrontend-01 && npm install && cd ../microfrontend-02 && npm install && cd ../",
+    "dev:root": "cd ./root-config && npm run dev",
+    "dev:mf1": "cd ./microfrontend-01 && npm run dev",
+    "dev:mf2": "cd ./microfrontend-02 && npm run dev",
+    "dev": "concurrently \"npm run dev:root\" \"npm run dev:mf1\" \"npm run dev:mf2\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
