@@ -1,6 +1,6 @@
-import App from "./App.vue";
-import { h, createApp } from "vue";
-import singleSpaVue from "single-spa-vue";
+const App = require("./App.vue");
+const { h, createApp } = require("vue");
+const singleSpaVue = require("single-spa-vue");
 
 const vueLifecycles = singleSpaVue({
   createApp,
@@ -22,6 +22,6 @@ const vueLifecycles = singleSpaVue({
 
 createApp(App).mount("#app"); // required for standalone -> only run in standalone
 
-export const bootstrap = vueLifecycles.bootstrap;
-export const mount = vueLifecycles.mount;
-export const unmount = vueLifecycles.unmount;
+exports.bootstrap = vueLifecycles.bootstrap;
+exports.mount = vueLifecycles.mount;
+exports.unmount = vueLifecycles.unmount;
