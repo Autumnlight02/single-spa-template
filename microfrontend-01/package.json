@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "single-spa-vue": "^3.0.0",
-    "vite-plugin-externalize-dependencies": "^0.10.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {

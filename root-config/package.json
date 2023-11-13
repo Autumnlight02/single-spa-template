@@ -11,20 +11,20 @@
     "build:types": "tsc"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.1",
     "concurrently": "^6.2.1",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-ts-important-stuff": "^1.1.0",
     "eslint-plugin-prettier": "^3.4.1",
-    "@types/jest": "^27.0.1",
     "jest": "^27.0.6",
     "jest-cli": "^27.0.6",
     "prettier": "^2.3.2",
     "serve": "^12.0.0",
     "ts-config-single-spa": "^3.0.0",
     "typescript": "^4.3.5",
-    "vite-plugin-externalize-dependencies": "^0.10.0"
+    "vite-plugin-single-spa": "^0.3.1"
   },
   "dependencies": {
     "single-spa": "^5.9.3",

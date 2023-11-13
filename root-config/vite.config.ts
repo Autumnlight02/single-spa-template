@@ -1,7 +1,6 @@
-import { defineConfig } from 'vite'
-import externalize from 'vite-plugin-externalize-dependencies';
-
-const externalDependencies = ["single-spa"]
+import { defineConfig } from "vite";
+// import vitePluginSingleSpa from "vite-plugin-single-spa";
+// import vitePluginSingleSpa from "vite-plugin-single-spa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,12 +8,14 @@ export default defineConfig({
     rollupOptions: {
       input: "src/main.ts",
       output: {
-        format: "esm",
+        format: "cjs",
       },
-      external: externalDependencies
     },
   },
   plugins: [
-    externalize({ externals: externalDependencies })
-  ]
+    // vitePluginSingleSpa({
+    //   type: "root",
+    // importMaps: { type: "systemjs-importmap" },
+    // }),
+  ],
 });
