@@ -20,6 +20,8 @@ const vueLifecycles = singleSpaVue({
   },
 });
 
+createApp(App).mount("#app"); // required for standalone -> only run in standalone
+
 export const bootstrap = vueLifecycles.bootstrap;
 export const mount = vueLifecycles.mount;
 export const unmount = vueLifecycles.unmount;
