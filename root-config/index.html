@@ -9,9 +9,9 @@
     <script type="importmap">
       {
         "imports": {
-          "@single-spa-preview-phillip/root-config": "http://localhost:3000/src/main.ts",
-          "@single-spa-preview-phillip/microfrontend-01": "http://localhost:3001/src/main.ts",
-          "@single-spa-preview-phillip/microfrontend-02": "http://localhost:3002/src/main.ts",
+          "@single-spa-preview/root-config": "http://localhost:3000/src/main.ts",
+          "@single-spa-preview/microfrontend-01": "http://localhost:3001/src/main.ts",
+          "@single-spa-preview/microfrontend-02": "http://localhost:3002/src/main.ts",
           "single-spa": "https://ga.jspm.io/npm:single-spa@5.9.5/lib/esm/single-spa.min.js"
         }
       }
@@ -21,7 +21,7 @@
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <script>
-      import("@single-spa-preview-phillip/root-config");
+      import("@single-spa-preview/root-config");
     </script>
     <import-map-overrides-full
       show-when-local-storage="devtools"

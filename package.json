@@ -1,5 +1,5 @@
 {
-  "name": "single-spa-preview-phillip",
+  "name": "single-spa-preview",
   "version": "1.0.0",
   "description": "This setup should help you get going with any Single-SPA Appmore. The setup is structured as Following: root-config // our root project microfrontend-01 // first Micro-fronten microfrontend-02 // second Micro frontend",
   "main": "index.js",
